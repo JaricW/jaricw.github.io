@@ -8,7 +8,15 @@
     <title>Jaric Woodhead Portfolio</title>
   </head>
   <body>
-    <header>
+    <nav class="navbar bg">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="home">   
         <h1>Hi, My name is Jaric</h1>
         <h2>Welcome to my Website</h2>
         <div class="container">
@@ -36,7 +44,7 @@
     </section>
     <section id="skills">
         <h2>Skills</h2>
-        <div id="languages" class="skillsList">
+        <div id="languages" class="skillsList container">
             <h3>Languages</h3>
             <ul>
                 <li>HTML5</li>
@@ -44,7 +52,7 @@
                 <li>JavaScript</li>
             </ul>
         </div>
-        <div id="frameworks" class="skillsList">
+        <div id="frameworks" class="skillsList container">
             <h3>Frameworks</h3>
             <ul>
                 <li>Bootstrap</li>
@@ -52,7 +60,7 @@
                 <li>React</li>
             </ul>
         </div>
-        <div id="tools" class="skillsList">
+        <div id="tools" class="skillsList container">
             <h3>Tools</h3>
             <ul>
                 <li>Git</li>
@@ -60,7 +68,7 @@
                 <li>Jest</li>
             </ul>
         </div>
-        <div id="about">
+        <div id="about" class="container">
             <h3>About Me</h3>
             <p>I've been working in marketing for the last 7 years, and have spent the last 3 heavily involved in Web Design and the User Experience.
                 I started learning to code at the beginning of 2020, and have since completed several online courses, most recently Codecademy's Front
@@ -73,10 +81,18 @@
         
     </section>
     <section id="contact">
-        <h2>Email me</h2>
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name</label>
+            <input id="name" type ="text" required>
+            <label for="email">Email</label>
+            <input id="email" type ="email" required>
+            <label for="subject">Subject</label>
+            <input id="subject" type ="text" required>
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+            <input type="submit" value="Submit">
+            </form> 
     </section>
-    <footer>
-        <h3>Linked in</h3>
-    </footer>
   </body>
 </html>
